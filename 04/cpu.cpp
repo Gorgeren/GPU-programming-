@@ -7,7 +7,7 @@ int main() {
     auto matrix = initialization<double>(matrix_size);
     read(matrix, matrix_size);
     printMatrix(matrix, matrix_size);
-    auto res = inverse_matrix<double>(matrix, matrix_size);
+    auto res = inverse_matrix(matrix, matrix_size);
 
     std::cout << "Inversed Matrix\n";
     printMatrix(res, matrix_size);
@@ -16,7 +16,7 @@ int main() {
     auto checkIdent = mulMatrix(matrix, res, matrix_size);
     printMatrix(checkIdent, matrix_size);
 
-    deleter(checkIdent, matrix_size);
-    deleter(matrix, matrix_size);
-    deleter(res, matrix_size);
+    deleter(checkIdent);
+    deleter(matrix);
+    deleter(res);
 }
