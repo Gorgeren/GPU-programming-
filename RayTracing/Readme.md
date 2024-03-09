@@ -1,7 +1,5 @@
-<video width="1920" height="1080" controls>
-  <source src="exampleHD.mp4" type="video/mp4">
-</video>
+## Пример генерации
 
-Видео оказалось слишком большим для гитхаба, пока выложил пример работы сюда
+[](https://github.com/Gorgeren/GPU-programming/assets/73250229/b37683a3-58eb-4c37-8778-6b158152588a)
 
-https://drive.google.com/file/d/17kMyaZiqpF7jDG9CK9UUVjK5v_vxYENG/view?usp=drive_link
+
