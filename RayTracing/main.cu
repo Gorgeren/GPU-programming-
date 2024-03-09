@@ -89,7 +89,7 @@ int main(int argc, const char* argv[]) {
     frames = 1;
 #endif
     vec3 tmp;
-    for(int k = 840; k < 841; ++k) {
+    for(int k = 738; k < 744; ++k) {
         float t = k * tau;
         vec3 camera_pos = vec3::cyl(r0_c + Ar_c * sin(wr_c * t + pr_c),
                              z0_c + Az_c * sin(wz_c * t + pz_c),

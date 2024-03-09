@@ -1,11 +1,11 @@
 # !/bin/bash
 
-rm -rf bin png vid1.mp4
-mkdir bin png
+# rm -rf bin png vid1.mp4
+# mkdir bin png
 
-echo "Running solution"
+# echo "Running solution"
 time ./"$1" $2 < ./in/normal.in
-echo "Running toPng.cpp"
+# echo "Running toPng.cpp"
 pids=() # Массив для хранения PID запущенных процессов
 
 for ((k = 0; k < 100000; k++ )); do
@@ -32,4 +32,6 @@ for pid in "${pids[@]}"; do
 done
 
 cd png
-ffmpeg -framerate 60 -i %03d.png -s 1920x1080 -pix_fmt yuv420p ../vid1.mp4
+ffmpeg -framerate 60 -i %03d.png -s 1080x720 -pix_fmt yuv420p ../vid1.mp4
+
+# ffmpeg -framerate 60 -i %03d.png -s 1920x1080 -pix_fmt yuv420p ../vid1.mp4

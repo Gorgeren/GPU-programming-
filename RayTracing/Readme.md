@@ -1,5 +1,5 @@
 <video width="1920" height="1080" controls>
-  <source src="example.mp4" type="video/mp4">
+  <source src="exampleHD.mp4" type="video/mp4">
 </video>
 
 Видео оказалось слишком большим для гитхаба, пока выложил пример работы сюда
